@@ -1,0 +1,92 @@
+header h2 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+nav{
+    margin: auto;
+}
+
+.menu-horizontal ul, li{
+    list-style: none;
+}
+
+.menu-horizontal{
+    background-color: #8CC0DE;
+	display: flex;
+	justify-content: space-around;
+    
+}
+
+.menu-horizontal li a{
+    display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+    color: black;
+}
+
+.menu-horizontal li:hover{
+	background-color: #1B6B93;
+    
+}
+
+.menu-horizontal li a:hover{
+    color: white;
+}
+
+
+
+.menu-vertical{
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    background: rgb(106, 171, 209);
+    position: absolute;
+    padding: 14px 0px;
+    
+}
+
+.menu-vertical li a{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: flex;
+    opacity: 1;
+}
+
+.menu-vertical li:hover{
+	background-color: #1B6B93;
+}
+
+.menu-vertical li{
+    width: 100%;
+    
+}
+
+.menu-vertical-css{
+	width: 200px;
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    padding: 0 0px;
+    background-color: rgb(76, 152, 193);
+    margin-left: 100%;
+    margin-top: -27%;
+}
+
+.menu-vertical li:hover .menu-vertical-css{
+    display: flex;
+    opacity: 1;
+}
+

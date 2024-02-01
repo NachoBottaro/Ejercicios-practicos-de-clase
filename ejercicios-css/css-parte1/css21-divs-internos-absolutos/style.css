@@ -1,0 +1,82 @@
+html,body{
+    background-color: #252B48;
+    height: 100%;
+}
+
+header {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: white;
+}
+
+.contenedor-padre{
+    
+    width: 90%;
+    height: 125%;
+    left: 5%;
+    right: 5%;
+    background-color: #5B9A8B;
+    position: absolute;
+    
+}
+
+.contenedor-absoluto-1{
+    
+    background-color: #F2ECBE;
+    
+    top: 15%;
+    left: 10%;
+    right: 60%;
+    height: 30%;
+    padding: 10px;
+    position: absolute;
+}
+
+.contenedor-absoluto-2{
+    
+    background-color: rgb(235, 156, 156);
+    
+    top: 30%;
+    left: 30%;
+    right: 30%;
+    height: 40%;
+    padding: 10px;
+    position: absolute;
+    opacity: 0.7;
+    z-index: 10;
+    
+    
+}
+
+.contenedor-absoluto-3{
+    
+    background-color: rgb(254, 55, 211);
+    padding: 10px;
+    top: 55%;
+    left: 55%;
+    right: 10%;
+    height: 35%;
+
+    position: absolute;
+    transform: rotate(15deg);
+    overflow: auto;
+    
+
+}
+
+
+
+
+
+footer{
+    margin-top: 5%;
+}
+
+footer{
+    position: absolute;
+    top: 135%;
+    width: 100%;
+}

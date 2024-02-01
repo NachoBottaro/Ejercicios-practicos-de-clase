@@ -1,0 +1,72 @@
+header {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(255, 255, 132);
+    overflow: hidden;
+
+}
+
+.div-container {
+    width: 50%;
+    margin: auto;
+    border: 1px solid;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    margin-right: 20px;
+    float: left;
+    width: 200px;
+    height: 100px;
+    
+}
+
+#div1 {
+    background-color: grey;
+    padding: 2% 5% 10% 5%;
+
+}
+
+#div2 {
+    background: radial-gradient(#00ff9d, #6471ff);
+    padding: 1% 5% 10% 5%;
+}
+
+#img-auto {
+    height: 200px;
+    width: auto;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#div3 {
+    background: linear-gradient(to bottom left, rgb(119, 119, 255), rgb(255, 108, 133));
+}
+
+#div4 {
+    background: linear-gradient(to bottom right, rgb(119, 119, 255), rgb(255, 108, 133));
+    padding-bottom: 5%;
+    padding: 3% 3% 5% 3%;
+    text-align: left;
+
+}
+
+#div5 {
+    background: linear-gradient(to bottom left, rgb(119, 119, 255), rgb(255, 108, 133));
+    padding-bottom: 5%;
+
+}
+
+.footer{
+    margin-top: 10px;
+}

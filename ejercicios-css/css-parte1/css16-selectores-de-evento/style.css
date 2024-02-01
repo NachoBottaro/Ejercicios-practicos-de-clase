@@ -1,0 +1,94 @@
+header {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.container-padre {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(255, 196, 132);
+    overflow: auto;
+}
+
+.menu-opciones {
+    margin: 5% 0% 5% 1%;
+}
+
+#input1:focus, #input2:focus{
+    background-color: aqua;
+}
+
+.opciones {
+    margin: 5px 0px 5px 5px;
+}
+
+.menu-opciones .opciones a {
+    text-decoration: none;
+    color: red;
+    padding: 3%;
+}
+
+.menu-opciones .opciones a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+    padding: 3%;
+}
+
+.menu-opciones .opciones a:active{
+    background-color: yellow;
+    color: rgb(0, 255, 94);
+}
+
+.img-auto {
+    
+    width: auto;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 10px 0 10px;
+    display: block;
+    transition: transform 10s;
+}
+
+
+.section-imagenes {
+    margin: 20px 0% 20px 0px;
+    overflow: auto;
+    
+
+}
+
+.recuadro-img {
+    border: 1px solid;
+    float: left;
+    height: 200px;
+    overflow: hidden; 
+    transition: flex-grow 3s, transform 3s; 
+    
+
+
+}
+
+.recuadro-img:active {
+    flex-grow: 1; /* Hacemos que el recuadro se expanda */
+    height: auto;
+    z-index: 1;
+    transform: scale(1);
+    max-width: 50%; 
+    max-height: 50%;
+
+}
+
+.recuadro-img:active .img-auto {
+    transform: scale(1);
+    margin: auto;
+    z-index: 1;
+}
+
+.footer {
+    margin-top: 10px;
+}

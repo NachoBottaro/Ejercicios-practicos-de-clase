@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio 3 - Formularios</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <link rel="stylesheet" href="style.css"> <!-- estilo de los formularios -->
+</head>
+
+<body>
+    <header>
+        <div><br>
+            <h1>Ejercicio 3: Formularios</h1><br>
+        </div>
+
+
+    </header>
+    <main>
+        <section class="Formularios container">
+            <h3>Entradas simples</h3>
+            <form target="_blank" method="post" action="./respuesta.html">
+                <ul>
+                    <li>
+                        <label style="font-weight: bold" for="apellido"> Apellido: </label> <br />
+                        <input type="text" id="apellido" name="apellido" value="" autofocus="autofocus" />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="password"> Contraseña: </label> <br />
+                        <input type="password" id="password" name="password" value="" autofocus="autofocus" />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="hidden"> Oculto: </label> <br />
+                        <input type="hidden" id="hidden" name="hidden" value="" autofocus="autofocus" />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="disabled"> Deshabilitado: </label> <br />
+                        <input type="text" id="disabled" name="disabled" value="" autofocus="autofocus" disabled />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="readonly"> Solo lectura: </label> <br />
+                        <input type="text" id="readonly" name="readonly" value="Solo lectura" autofocus="autofocus"
+                            readonly />
+                    </li>
+                </ul>
+
+                <h3>Entradas seleccion</h3>
+                <ul>
+                    <li>
+                        <h4>¿Cual es su comida favorita?</h4>
+                    </li>
+
+                    <input type="checkbox" id="milanesa" name="milanesa" value="si">
+                    <label style="font-weight: bold;" for="milanesa">Milanesa con pure</label>
+                    <br>
+                    <input type="checkbox" id="pizza" name="pizza" value="si">
+                    <label style="font-weight: bold;" for="pizza">Pizza</label>
+                    <br>
+                    <input type="checkbox" id="empanadas" name="empanadas" value="si">
+                    <label style="font-weight: bold;" for="empanadas">Empanadas</label>
+                    <br>
+                    <input type="checkbox" id="asado" name="asado" value="si">
+                    <label style="font-weight: bold;" for="asado">Asado</label><br><br>
+
+                    <li>
+                        <h5> Sexo</h5>
+                    </li>
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="femenino" name="sexo" value="f" checked="checked">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="sexo" value="m" checked="checked">
+                    <label for="otro">Otro</label>
+                    <input type="radio" id="otro" name="sexo" value="o" checked="checked">
+
+                    <li>
+                        <label for="pais"><br>
+                            <h4>Pais</h4>
+                        </label>
+                    </li>
+                    <select id="pais" name="pais">
+                        <option value="arg">Argentina</option>
+                        <option value="ch">Chile</option>
+                        <option value="per">Peru</option>
+                        <option value="br">Brasil</option>
+                        <option value="pa">Paraguay</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="bol">Bolivia</option>
+                        <option value="ec">Ecuador</option>
+                        <option value="col">Colombia</option>
+                        <option value="ven">Venezuela</option>
+                        <option value="ot">Otro</option>
+                    </select>
+
+                    <li>
+                        <h4>Fecha y Hora</h4>
+                    </li>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha">
+                    <br><br>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora">
+
+                    <li>
+                        <label for="colors">
+                            <h4>Color</h4>
+                        </label>
+                    </li>
+                    <input id="colors" name="colors" type="color">
+                </ul>
+
+                <h3>Entrada validacion</h3>
+                <br>
+                <ul>
+                    <li>
+                        <label style="font-weight: bold" for="comentario"> Comentario: </label> <br/>
+                        <input type="text" name="Comentario" required=required />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="email"> Email: </label> <br/>
+                        <input type="email" name="user-email" placeholder="texto@texto.com" required=required />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="number"> Numero Entero: </label> <br/>
+                        <input type="number" min="1" max="5" name="numeroEntero" />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="number"> Numero Decimal: </label> <br/>
+                        <input type="number" min="0" max="9" name="numeroReal" step="0.1" />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="url"> URL: </label> <br/>
+                        <input type="url" name="sitio" placeholder="http://url.com" required="required" />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="mascara"> Patron: </label> <br/>
+                        <input type="text" pattern="[a-z]{3}[1-3]{2}" name="mascara"
+                            title="3 letras y dos numeros que sean 1, 2 o 3" placeholder="3 letras y 2 numeros (1-3)" />
+                    </li>
+                    <br>
+                    <li>
+                        <label style="font-weight: bold" for="telefono">N&uacutemero de telefono</label><br>
+                        <input type="text" pattern="\+54 \d{2} \d{8}" name="telefono" id="telefono"
+                            title="Escribir en formato: +54 11 11112222" placeholder="+54 11 11112222" required>
+                    </li>
+
+                    <br>
+                    <button type="submit" value="Enviar" class="btn btn-success">Enviar</button>
+
+                    <button type="reset" class="btn btn-warning">Restablecer</button>
+                </ul>
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+
+
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="../index.html" id="volver">Volver</a></li>
+        </ul>
+
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

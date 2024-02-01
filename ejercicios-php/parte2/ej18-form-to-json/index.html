@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header-div">
+        <div class="title-div">
+            <h1>Ejercicio 3: Form to JSON</h1>
+        </div>
+    </div>
+    <div class="content-div">
+        <button id="active-modal">Ventana Modal</button>
+        
+        <div id="modal" class="modal-form-hidden">
+
+            <div class="header-modal">
+                <h2>Encabezado Modal</h2>
+                <button class="close-button" id="close-modal-button">X</button>
+            </div>
+
+            <div class="form-div">
+                <h1>Ejercicio 1: Formulario</h1>
+
+                <form id="form" class="form">
+                    <div class="form-content">
+                        <label for="idUser">IdUsuario</label>
+                        <input type="text" name="idUser" id="idUser" required>
+
+                        <label for="login">Login</label>
+                        <input type="text" name="login" id="login" required>
+
+                        <label for="lastname-input">Apellido</label>
+                        <input type="text" id="lastname-input" name="lastname" required>
+
+                        <label for="name-input">Nombre</label>
+                        <input type="text" id="name-input" name="name" required>
+
+                        <label for="birth-input">Nacimiento</label>
+                        <input type="date" id="birth-input" name="birth" required>
+
+                        <div class="button-div">
+                            <button id="send-button" type="submit">Enviar</button>
+                        </div>
+
+                        <div id="server-answer" class="answer">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-div">
+        <h2>Footer de la tabla</h2>
+    </div>
+
+    <script src="../ajax/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

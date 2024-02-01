@@ -1,0 +1,41 @@
+
+
+header {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    
+   
+}
+
+.contenedor-padre {
+    margin: auto;
+    width: 90%;
+    background-color: #94ADD7;
+
+}
+
+.contenedor-img{
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    
+}
+
+#foto-c8{
+    width: 300px; 
+    max-width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+    
+}
+
+
+footer {
+    margin-top: 5%;
+}

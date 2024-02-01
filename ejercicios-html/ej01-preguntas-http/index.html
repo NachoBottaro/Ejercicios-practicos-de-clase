@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ejercicio 1 HTTP</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+  <header>
+
+    <div><br>
+      <h1>Preguntas sobre el protocolo Http</h1><br>
+    </div>
+
+
+  </header>
+  <main>
+
+    <section id="section-links" class="container">
+      <h3>Seccion de links de interes</h3>
+      <div>
+        <ul>
+          <li><a href="https://www.ibm.com/docs/es/power10/7063-CR2?topic=apis-http-protocol">IBM - Protocolo HTTP</a>
+          </li>
+          <li><a href="https://aws.amazon.com/es/compare/the-difference-between-https-and-http/">Amazon - Diferencias
+              entre protocolo http y https</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="preguntas-http">
+      <div class="container">
+        <h3>Seccion preguntas sobre Http</h3>
+        <ol class="list-group list-group-numbered list-group-flush">
+          <li id="preguntas-http" class="list-group-item"><b>Sobre que protocolo binario está montado el protocolo
+              HTTP?</b><br>
+            <p>El protocolo http se encuentra montado sobre el protocolo Tcp.</p>
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿Cuáles son los clientes http y los servidores http mas
+              utilizados?</b>
+            <p>Dentro de los clientes http mas usados nos encontramos con:
+            <ul>
+              <li>Los navegadores como mozila, Chrome, Safari, etc.</li>
+              <li>Curl</li>
+            </ul>
+            </p>
+            <p>Por otro lado, dentro de los servidores http, nos encontramos con los web servers como Nginx, Apache,
+              CloudFlare, IIS, etc.
+            </p>
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿Que verbos admite un comando en el requerimiento HTTP?</b>
+            <p>Algunos de los verbos que admite un comando de requerimiento http son:</p>
+            <ul>
+              <li>GET</li>
+              <li>POST</li>
+              <li>DELETE</li>
+              <li>POST</li>
+            </ul>
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿Que contenido lleva el body de un requerimiento HTTP?</b>
+            <p>El body de un requerimiento http puede contener datos de cualquier formato. Estos pueden ser datos
+              ingresados en campos de un formulario o bien, files enviados en un proceso de upload</p>
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿Que diferencia existe entre un URL y un URI?</b>
+            <p>El URI identifica un recurso y lo diferencia de otros mediante un nombre, una ubicación o ambos. La URL
+              identifica la dirección web o la ubicación de un recurso único.
+              La URI esta dentro de la URL. La URI identifica un recurso, cualquier elemento que esta dentro de una
+              pagina. </p>
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿En que variables quedan almacenados datos de las
+              respuestas http?</b>
+            <p>En las cookies del navegador</p>
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿Que significa Virtual hosting? </b>
+            <p>El concepto de virtual hosting hace referencia a la virtualizacion de un servidor que tiene como objetivo
+              almacenar varios dominios bajo la misma IP y cada uno tiene un nombre de host distinto.</p>
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿Porque el HTTP se considera STATE LESS? </b>
+            <p>Porque cada requerimiento y respuesta HTTP se realiza de forma independiente al resto de requerimientos y
+              respuestas hechas previamente.</p>
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿Como va a mejorar la velocidad de la WEB en poco
+              tiempo?</b>
+            <p> Con QUIC, ya que este protocolo realiza las funciones que hacía TCP y que no hace UDP. Además, lo hace
+              de forma más eficiente, consiguiendo datos fiables, seguros y a mayor velocidad. </p>
+            <p> QUIC, en un principio, se va a utilizar solo con el protocolo de aplicación HTTP/3, pero es probable que
+              en el futuro otros protocolos de aplicación se apoyen en QUIC. </p>
+            <p> HTTP/2 tambien, ya que este pide de una todo lo que necesita para cargar la pagina. </p>
+
+          </li>
+          <li id="preguntas-http" class="list-group-item"><b>¿Como va a mejorar el comportamiento de una aplicación WEB
+              en
+              ambientes ruidosos o de débil conexión?</b>
+            <p> QUIC las va a mejorar ya que este produce conexiones UDP mucho mas cortas, eficientes y de facil
+              establecimiento, ideales para la transmisión de las partes constitutivas de un documento HTML. </p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <section id="section-imagen">
+      <div class="container">
+        <img
+          style="width: 500px;width: auto;margin: auto;max-width: 100%;max-height: 100%;display: flex;justify-content: center;"
+          id="imagen-http" src="protocolo-http.png" alt="imagen-protocolo-http">
+      </div>
+    </section>
+
+    <section id="section-video" class="container">
+      <div id="contenedor-video">
+
+        <video controls width="600" height="400"
+          style="width: auto;margin: auto;max-width: 100%;max-height: 100%;display: flex;justify-content: center;">
+          <source src="video-protocolo-http.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+    <div class="datos-personales container">
+      <h3>Datos Personales</h3>
+      <ul>
+        <li>Ignacio Bottaro</li>
+        <li>Mail: ignacio.bottaro@comumidad.ub.com.ar</li>
+      </ul>
+    </div>
+
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="../index.html" id="volver">Volver</a></li>
+    </ul>
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

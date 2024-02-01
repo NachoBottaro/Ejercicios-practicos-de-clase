@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(100, 150, 190);
+}
+
+.header-div {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-div {
+    background-color: rgb(20, 180, 100);
+    overflow: auto;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+}
+
+.modal-form-hidden {
+    display: none;
+}
+
+.modal-form-visible {
+    position: fixed;
+    background-color: rgb(100, 150, 150);
+    width: 50em;
+    height: auto;
+    padding-bottom: 0.5em;
+    top: 50%; /* Lo coloca verticalmente en el centro */
+    left: 50%; /* Lo coloca horizontalmente en el centro */
+    transform: translate(-50%, -50%);
+    display: visible;
+}
+
+.form-div {
+    width: 100%;
+}
+
+.header-modal {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(60, 150, 220);
+    padding: 0;
+    height: auto;
+    border-radius: .5em;
+}
+
+.close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgb(200, 50, 50);
+    border-radius: .3em;
+}
+
+.form-content {
+    text-align: left;
+}
+
+.form-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-content input{
+    width: 30%;
+    margin-bottom: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-div {
+    text-align: center;
+}
+
+
+.footer-div {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    background-color: rgb(100, 150, 190);
+    height: 10%;
+    text-align: center;
+    font-size: 1.5em;
+}

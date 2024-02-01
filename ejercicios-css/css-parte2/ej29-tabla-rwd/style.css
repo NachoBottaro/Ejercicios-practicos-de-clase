@@ -1,0 +1,132 @@
+html,
+body {
+    height: 100%;
+    background-color: rgb(255, 116, 116);
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    border: 3px solid;
+    height: 10%;
+
+}
+
+.container-tabla {
+    position: absolute;
+    overflow: auto;
+    background-color: white;
+    height: 75%;
+    width: 100%;
+}
+
+.container-tabla table{
+    width: 100%;
+}
+
+.container-tabla table th, td{
+    border: 1px solid;
+}
+
+#columna-fecha{
+    width: 15%;
+}
+#columna-abrir{
+    width: 10%;
+}
+#columna-max{
+    width: 10%;
+}
+#columna-min{
+    width: 10%;
+}
+#columna-cierre{
+    width: 15%;
+}
+
+#columna-ajus{
+    width: 12%;
+}
+
+#columna-volumen{
+    width: 15%;
+}
+
+.container-footer {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    background-color: rgb(255, 116, 116);
+    border: 3px solid;
+    height: 15%;
+}
+
+.container-pie-tabla {
+    top: 10%;
+    
+    position: absolute;
+}
+
+
+
+.botton-volver {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: 50%;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+/* 
+#volver{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#volver:hover{
+    color: white;
+}
+
+.botton-volver:hover{
+    background-color: rgb(103, 230, 99);
+} */
+
+@media screen and (max-width: 1300px){
+    #tabla-valores-sp500 td:nth-child(6),
+    #tabla-valores-sp500 th:nth-child(6) {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #tabla-valores-sp500 td:nth-child(7),
+    #tabla-valores-sp500 th:nth-child(7) {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #tabla-valores-sp500 td:nth-child(2),
+    #tabla-valores-sp500 th:nth-child(2) {
+      display: none;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    #tabla-valores-sp500 td:nth-child(3),
+    #tabla-valores-sp500 th:nth-child(3) {
+      display: none;
+    }
+    #tabla-valores-sp500 td:nth-child(4),
+    #tabla-valores-sp500 th:nth-child(4) {
+      display: none;
+    }
+}

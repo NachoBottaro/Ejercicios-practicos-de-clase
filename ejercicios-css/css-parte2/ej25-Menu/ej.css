@@ -1,0 +1,70 @@
+header {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: rgb(0, 0, 0);
+}
+
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: #333;
+	font-size: 20px;
+	margin-top: 50px;
+    border-radius: 5px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal li a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal li:hover{
+	background-color: rgb(56, 189, 204);
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 250px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgb(83, 237, 119);
+}
+
+.menu-vertical li{
+    border-radius: 10px;
+    margin: 5px 15px 5px 0;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+    
+}
+
+.menu-vertical-css-parte1{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 250px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+
+footer{
+    margin-top: 20%;
+}

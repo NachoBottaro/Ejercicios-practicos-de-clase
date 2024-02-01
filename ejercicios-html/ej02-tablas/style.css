@@ -1,0 +1,17 @@
+.tabla1{
+    
+    border-collapse: collapse;
+    margin: 3% 0% 3% 0%;
+}
+
+.tabla1 td{
+    width: 50px;
+    height: 30px;
+    border: solid;
+    background-color: white;
+
+}
+
+.tabla2 td, th{
+    text-align: center;
+}

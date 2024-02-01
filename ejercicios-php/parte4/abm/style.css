@@ -1,0 +1,282 @@
+header {
+    width: 100%;
+    border: 3px solid;
+    height: 15%;
+    position: absolute;
+    background-color: rgb(236, 245, 134);
+}
+
+.bottones-tabla {
+    justify-content: right;
+    align-items: right;
+    display: flex;
+    margin: 0 1% 0 0;
+}
+
+.bottones-tabla button {
+    margin: 0 5px 0 0;
+}
+
+.container-table {
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+
+}
+
+.container-table table {
+    width: 100%;
+}
+
+.container-table thead {
+    background-color: aqua;
+    
+    position: sticky;
+    top: 0;
+
+}
+
+
+.tbody-content {
+    position: absolute;
+    max-height: 83%;
+    box-sizing: border-box;
+    overflow: auto;
+    width: 100%;
+}
+
+
+.container-table th {
+    /* width: 10%; */
+    text-align: center;
+
+}
+
+
+.container-footer {
+    width: 100%;
+    border: 3px solid;
+    height: 15%;
+    position: absolute;
+    background-color: rgb(236, 245, 134);
+    top: 85%;
+}
+
+
+
+.td-container {
+    padding: 5px;
+    /* margin: 5px; */
+    border-right: 1px solid black;
+    /* width: 10%; */
+}
+
+table input,
+table select {
+    width: 65%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+
+.botton-volver {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: 50%;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.botton-tabla {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#id {
+    width: 6%;
+}
+
+#marca {
+    width: 12%;
+}
+
+#modelo {
+    width: 12%;
+}
+
+#anio {
+    width: 12%;
+}
+
+#valor {
+    width: 12%;
+}
+
+#descripcion {
+    width: 12%;
+}
+
+#archivo_binario {
+    width: 12%;
+}
+
+#columna-btn-Modi {
+    width: 12%;
+}
+
+#columna-btn-Baja{
+    width: 12%;
+}
+
+@media (max-width: 1350px) {
+
+    th:nth-child(7),
+    td:nth-child(7) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    th:nth-child(6),
+    td:nth-child(6) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    th:nth-child(4),
+    td:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    th:nth-child(5),
+    td:nth-child(5) {
+        display: none;
+    }
+}
+
+/* ESTILOS CUANDO SE CLICKEA UN BOTON DE MODIF, ELIMINAR O DAR DE ALTA UN REGISTRO */
+.contenedor-pasivo {
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+
+
+/* ESTILOS DE LOS FORMULARIO */
+
+
+.buttonClose {
+    background-color: #f53333;
+    /* padding: .7em; */
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    /* border-radius: .5em; */
+    
+}
+
+.container-button-x {
+    justify-content: right;
+    display: flex;
+    background-color: rgb(46, 117, 117);;
+    padding: 5px;
+}
+
+
+
+.formABM {
+    padding: .3em;
+    position: fixed;
+    top: 50%;
+    /* Centra verticalmente en relación con el viewport */
+    left: 50%;
+    /* Centra horizontalmente en relación con el viewport */
+    transform: translate(-50%, -50%);
+    background-color: rgb(100, 150, 150);
+    font-weight: bold;
+    width: 40%;
+    border: 1px solid #ffffff;
+    z-index: 2;
+
+
+   
+}
+
+.server {
+    padding: .3em;
+    position: fixed;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(100, 150, 150);
+    font-weight: bold;
+    color: #ffffff;
+    width: 25%;
+    border: 1px solid #ffffff;
+    z-index: 2;
+}
+
+.visibilityHidden {
+    display: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.form-column label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-column input,
+.form-column select,
+.form-column textarea {
+    width: 75%;
+    margin-bottom: .4em;
+    border-color: #000000;
+}
+
+.center-button {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .center-button button:hover {
+    background-color: rgb(235, 126, 171);
+} */
+
+#imagen {
+    cursor: pointer;
+}

@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio 29</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <h2>Ejercicio 29: Tabla Rwd - Valores historicos de S&P 500</h2>
+
+        </div>
+    </header>
+    <main>
+        <section class="container-main">
+            <!-- <h2>F1 Qualifying classification (Monza 2023)</h2> -->
+            <div class="container-tabla">
+                <table id="tabla-valores-sp500">
+                    <thead>
+                        <tr>
+                            <th id="columna-fecha"><span>Fecha</span></th>
+                            <th id="columna-abrir"><span>Abrir</span></th>
+                            <th id="columna-max"><span>Máx.</span></th>
+                            <th id="columna-min"><span>Mín.</span></th>
+                            <th id="columna-cierre"><span>Cierre</span></th>
+                            <th id="columna-ajus"><span>Cierre ajuste </span></th>
+                            <th id="columna-volumen"><span>Volumen</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>01 sept 2023</span></td>
+                            <td><span>4530,60</span></td>
+                            <td><span>4541,25</span></td>
+                            <td><span>4501,35</span></td>
+                            <td><span>4515,77</span></td>
+                            <td><span>4515,77</span></td>
+                            <td><span>3.246.260.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>31 ago 2023</span></td>
+                            <td><span>4517,01</span></td>
+                            <td><span>4532,26</span></td>
+                            <td><span>4507,39</span></td>
+                            <td><span>4507,66</span></td>
+                            <td><span>4507,66</span></td>
+                            <td><span>3.946.360.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>30 ago 2023</span></td>
+                            <td><span>4500,34</span></td>
+                            <td><span>4521,65</span></td>
+                            <td><span>4493,59</span></td>
+                            <td><span>4514,87</span></td>
+                            <td><span>4514,87</span></td>
+                            <td><span>3.064.110.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>29 ago 2023</span></td>
+                            <td><span>4432,75</span></td>
+                            <td><span>4500,14</span></td>
+                            <td><span>4431,68</span></td>
+                            <td><span>4497,63</span></td>
+                            <td><span>4497,63</span></td>
+                            <td><span>3.354.820.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>28 ago 2023</span></td>
+                            <td><span>4426,03</span></td>
+                            <td><span>4439,56</span></td>
+                            <td><span>4414,98</span></td>
+                            <td><span>4433,31</span></td>
+                            <td><span>4433,31</span></td>
+                            <td><span>2.957.230.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>25 ago 2023</span></td>
+                            <td><span>4389,38</span></td>
+                            <td><span>4418,46</span></td>
+                            <td><span>4356,29</span></td>
+                            <td><span>4405,71</span></td>
+                            <td><span>4405,71</span></td>
+                            <td><span>3.296.180.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>24 ago 2023</span></td>
+                            <td><span>4455,16</span></td>
+                            <td><span>4458,30</span></td>
+                            <td><span>4375,55</span></td>
+                            <td><span>4376,31</span></td>
+                            <td><span>4376,31</span></td>
+                            <td><span>3.723.470.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>23 ago 2023</span></td>
+                            <td><span>4396,44</span></td>
+                            <td><span>4443,18</span></td>
+                            <td><span>4396,44</span></td>
+                            <td><span>4436,01</span></td>
+                            <td><span>4436,01</span></td>
+                            <td><span>3.837.270.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>22 ago 2023</span></td>
+                            <td><span>4415,33</span></td>
+                            <td><span>4418,59</span></td>
+                            <td><span>4382,77</span></td>
+                            <td><span>4387,55</span></td>
+                            <td><span>4387,55</span></td>
+                            <td><span>3.522.760.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>21 ago 2023</span></td>
+                            <td><span>4380,28</span></td>
+                            <td><span>4407,55</span></td>
+                            <td><span>4360,30</span></td>
+                            <td><span>4399,77</span></td>
+                            <td><span>4399,77</span></td>
+                            <td><span>3.726.850.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>18 ago 2023</span></td>
+                            <td><span>4344,88</span></td>
+                            <td><span>4381,82</span></td>
+                            <td><span>4335,31</span></td>
+                            <td><span>4369,71</span></td>
+                            <td><span>4369,71</span></td>
+                            <td><span>3.940.400.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>17 ago 2023</span></td>
+                            <td><span>4416,32</span></td>
+                            <td><span>4421,17</span></td>
+                            <td><span>4364,83</span></td>
+                            <td><span>4370,36</span></td>
+                            <td><span>4370,36</span></td>
+                            <td><span>3.943.700.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>16 ago 2023</span></td>
+                            <td><span>4433,79</span></td>
+                            <td><span>4449,95</span></td>
+                            <td><span>4403,55</span></td>
+                            <td><span>4404,33</span></td>
+                            <td><span>4404,33</span></td>
+                            <td><span>3.753.910.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>15 ago 2023</span></td>
+                            <td><span>4478,87</span></td>
+                            <td><span>4478,87</span></td>
+                            <td><span>4432,19</span></td>
+                            <td><span>4437,86</span></td>
+                            <td><span>4437,86</span></td>
+                            <td><span>3.832.250.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>14 ago 2023</span></td>
+                            <td><span>4458,13</span></td>
+                            <td><span>4490,33</span></td>
+                            <td><span>4453,44</span></td>
+                            <td><span>4489,72</span></td>
+                            <td><span>4489,72</span></td>
+                            <td><span>3.896.410.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>11 ago 2023</span></td>
+                            <td><span>4450,69</span></td>
+                            <td><span>4476,23</span></td>
+                            <td><span>4443,98</span></td>
+                            <td><span>4464,05</span></td>
+                            <td><span>4464,05</span></td>
+                            <td><span>3.753.290.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>10 ago 2023</span></td>
+                            <td><span>4487,16</span></td>
+                            <td><span>4527,37</span></td>
+                            <td><span>4457,92</span></td>
+                            <td><span>4468,83</span></td>
+                            <td><span>4468,83</span></td>
+                            <td><span>4.504.370.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>09 ago 2023</span></td>
+                            <td><span>4501,57</span></td>
+                            <td><span>4502,44</span></td>
+                            <td><span>4461,33</span></td>
+                            <td><span>4467,71</span></td>
+                            <td><span>4467,71</span></td>
+                            <td><span>3.803.100.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>08 ago 2023</span></td>
+                            <td><span>4498,03</span></td>
+                            <td><span>4503,31</span></td>
+                            <td><span>4464,39</span></td>
+                            <td><span>4499,38</span></td>
+                            <td><span>4499,38</span></td>
+                            <td><span>3.884.910.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>07 ago 2023</span></td>
+                            <td><span>4491,58</span></td>
+                            <td><span>4519,84</span></td>
+                            <td><span>4491,15</span></td>
+                            <td><span>4518,44</span></td>
+                            <td><span>4518,44</span></td>
+                            <td><span>3.493.920.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>04 ago 2023</span></td>
+                            <td><span>4513,96</span></td>
+                            <td><span>4540,34</span></td>
+                            <td><span>4474,55</span></td>
+                            <td><span>4478,03</span></td>
+                            <td><span>4478,03</span></td>
+                            <td><span>4.143.310.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>03 ago 2023</span></td>
+                            <td><span>4494,27</span></td>
+                            <td><span>4519,49</span></td>
+                            <td><span>4485,54</span></td>
+                            <td><span>4501,89</span></td>
+                            <td><span>4501,89</span></td>
+                            <td><span>4.149.120.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>02 ago 2023</span></td>
+                            <td><span>4550,93</span></td>
+                            <td><span>4550,93</span></td>
+                            <td><span>4505,75</span></td>
+                            <td><span>4513,39</span></td>
+                            <td><span>4513,39</span></td>
+                            <td><span>4.270.710.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>01 ago 2023</span></td>
+                            <td><span>4578,83</span></td>
+                            <td><span>4584,62</span></td>
+                            <td><span>4567,53</span></td>
+                            <td><span>4576,73</span></td>
+                            <td><span>4576,73</span></td>
+                            <td><span>4.042.370.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>31 jul 2023</span></td>
+                            <td><span>4584,82</span></td>
+                            <td><span>4594,22</span></td>
+                            <td><span>4573,14</span></td>
+                            <td><span>4588,96</span></td>
+                            <td><span>4588,96</span></td>
+                            <td><span>4.503.600.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>28 jul 2023</span></td>
+                            <td><span>4565,75</span></td>
+                            <td><span>4590,16</span></td>
+                            <td><span>4564,01</span></td>
+                            <td><span>4582,23</span></td>
+                            <td><span>4582,23</span></td>
+                            <td><span>3.981.010.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>27 jul 2023</span></td>
+                            <td><span>4598,26</span></td>
+                            <td><span>4607,07</span></td>
+                            <td><span>4528,56</span></td>
+                            <td><span>4537,41</span></td>
+                            <td><span>4537,41</span></td>
+                            <td><span>4.553.210.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>26 jul 2023</span></td>
+                            <td><span>4558,96</span></td>
+                            <td><span>4582,47</span></td>
+                            <td><span>4547,58</span></td>
+                            <td><span>4566,75</span></td>
+                            <td><span>4566,75</span></td>
+                            <td><span>3.990.290.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>25 jul 2023</span></td>
+                            <td><span>4555,19</span></td>
+                            <td><span>4580,62</span></td>
+                            <td><span>4552,42</span></td>
+                            <td><span>4567,46</span></td>
+                            <td><span>4567,46</span></td>
+                            <td><span>3.812.470.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>24 jul 2023</span></td>
+                            <td><span>4543,39</span></td>
+                            <td><span>4563,41</span></td>
+                            <td><span>4541,29</span></td>
+                            <td><span>4554,64</span></td>
+                            <td><span>4554,64</span></td>
+                            <td><span>3.856.250.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>21 jul 2023</span></td>
+                            <td><span>4550,16</span></td>
+                            <td><span>4555,00</span></td>
+                            <td><span>4535,79</span></td>
+                            <td><span>4536,34</span></td>
+                            <td><span>4536,34</span></td>
+                            <td><span>3.570.190.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>20 jul 2023</span></td>
+                            <td><span>4554,38</span></td>
+                            <td><span>4564,74</span></td>
+                            <td><span>4527,56</span></td>
+                            <td><span>4534,87</span></td>
+                            <td><span>4534,87</span></td>
+                            <td><span>3.761.770.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>19 jul 2023</span></td>
+                            <td><span>4563,87</span></td>
+                            <td><span>4578,43</span></td>
+                            <td><span>4557,48</span></td>
+                            <td><span>4565,72</span></td>
+                            <td><span>4565,72</span></td>
+                            <td><span>4.115.670.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>18 jul 2023</span></td>
+                            <td><span>4521,78</span></td>
+                            <td><span>4562,30</span></td>
+                            <td><span>4514,59</span></td>
+                            <td><span>4554,98</span></td>
+                            <td><span>4554,98</span></td>
+                            <td><span>4.090.010.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>17 jul 2023</span></td>
+                            <td><span>4508,86</span></td>
+                            <td><span>4532,85</span></td>
+                            <td><span>4504,90</span></td>
+                            <td><span>4522,79</span></td>
+                            <td><span>4522,79</span></td>
+                            <td><span>3.538.240.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>14 jul 2023</span></td>
+                            <td><span>4514,61</span></td>
+                            <td><span>4527,76</span></td>
+                            <td><span>4499,56</span></td>
+                            <td><span>4505,42</span></td>
+                            <td><span>4505,42</span></td>
+                            <td><span>3.647.450.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>13 jul 2023</span></td>
+                            <td><span>4491,50</span></td>
+                            <td><span>4517,38</span></td>
+                            <td><span>4489,36</span></td>
+                            <td><span>4510,04</span></td>
+                            <td><span>4510,04</span></td>
+                            <td><span>3.839.530.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>12 jul 2023</span></td>
+                            <td><span>4467,69</span></td>
+                            <td><span>4488,34</span></td>
+                            <td><span>4463,23</span></td>
+                            <td><span>4472,16</span></td>
+                            <td><span>4472,16</span></td>
+                            <td><span>3.920.290.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>11 jul 2023</span></td>
+                            <td><span>4415,55</span></td>
+                            <td><span>4443,64</span></td>
+                            <td><span>4408,46</span></td>
+                            <td><span>4439,26</span></td>
+                            <td><span>4439,26</span></td>
+                            <td><span>3.624.220.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>10 jul 2023</span></td>
+                            <td><span>4394,23</span></td>
+                            <td><span>4412,60</span></td>
+                            <td><span>4389,92</span></td>
+                            <td><span>4409,53</span></td>
+                            <td><span>4409,53</span></td>
+                            <td><span>3.429.600.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>07 jul 2023</span></td>
+                            <td><span>4404,54</span></td>
+                            <td><span>4440,39</span></td>
+                            <td><span>4397,40</span></td>
+                            <td><span>4398,95</span></td>
+                            <td><span>4398,95</span></td>
+                            <td><span>3.630.480.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>06 jul 2023</span></td>
+                            <td><span>4422,62</span></td>
+                            <td><span>4422,62</span></td>
+                            <td><span>4385,05</span></td>
+                            <td><span>4411,59</span></td>
+                            <td><span>4411,59</span></td>
+                            <td><span>3.682.020.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>05 jul 2023</span></td>
+                            <td><span>4442,04</span></td>
+                            <td><span>4454,06</span></td>
+                            <td><span>4436,61</span></td>
+                            <td><span>4446,82</span></td>
+                            <td><span>4446,82</span></td>
+                            <td><span>3.482.620.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>03 jul 2023</span></td>
+                            <td><span>4450,48</span></td>
+                            <td><span>4456,46</span></td>
+                            <td><span>4442,29</span></td>
+                            <td><span>4455,59</span></td>
+                            <td><span>4455,59</span></td>
+                            <td><span>2.034.280.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>30 jun 2023</span></td>
+                            <td><span>4422,44</span></td>
+                            <td><span>4458,48</span></td>
+                            <td><span>4422,44</span></td>
+                            <td><span>4450,38</span></td>
+                            <td><span>4450,38</span></td>
+                            <td><span>3.923.450.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>29 jun 2023</span></td>
+                            <td><span>4374,94</span></td>
+                            <td><span>4398,39</span></td>
+                            <td><span>4371,97</span></td>
+                            <td><span>4396,44</span></td>
+                            <td><span>4396,44</span></td>
+                            <td><span>3.696.660.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>28 jun 2023</span></td>
+                            <td><span>4367,48</span></td>
+                            <td><span>4390,35</span></td>
+                            <td><span>4360,22</span></td>
+                            <td><span>4376,86</span></td>
+                            <td><span>4376,86</span></td>
+                            <td><span>3.739.330.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>27 jun 2023</span></td>
+                            <td><span>4337,36</span></td>
+                            <td><span>4384,42</span></td>
+                            <td><span>4335,00</span></td>
+                            <td><span>4378,41</span></td>
+                            <td><span>4378,41</span></td>
+                            <td><span>3.573.500.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>26 jun 2023</span></td>
+                            <td><span>4344,84</span></td>
+                            <td><span>4362,06</span></td>
+                            <td><span>4328,08</span></td>
+                            <td><span>4328,82</span></td>
+                            <td><span>4328,82</span></td>
+                            <td><span>3.415.030.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>23 jun 2023</span></td>
+                            <td><span>4354,17</span></td>
+                            <td><span>4366,55</span></td>
+                            <td><span>4341,34</span></td>
+                            <td><span>4348,33</span></td>
+                            <td><span>4348,33</span></td>
+                            <td><span>6.053.620.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>22 jun 2023</span></td>
+                            <td><span>4355,40</span></td>
+                            <td><span>4382,25</span></td>
+                            <td><span>4351,82</span></td>
+                            <td><span>4381,89</span></td>
+                            <td><span>4381,89</span></td>
+                            <td><span>3.511.000.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>21 jun 2023</span></td>
+                            <td><span>4380,01</span></td>
+                            <td><span>4386,22</span></td>
+                            <td><span>4360,14</span></td>
+                            <td><span>4365,69</span></td>
+                            <td><span>4365,69</span></td>
+                            <td><span>3.709.330.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>20 jun 2023</span></td>
+                            <td><span>4396,11</span></td>
+                            <td><span>4400,15</span></td>
+                            <td><span>4367,19</span></td>
+                            <td><span>4388,71</span></td>
+                            <td><span>4388,71</span></td>
+                            <td><span>4.055.790.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>16 jun 2023</span></td>
+                            <td><span>4440,95</span></td>
+                            <td><span>4448,47</span></td>
+                            <td><span>4407,44</span></td>
+                            <td><span>4409,59</span></td>
+                            <td><span>4409,59</span></td>
+                            <td><span>6.848.600.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>15 jun 2023</span></td>
+                            <td><span>4365,33</span></td>
+                            <td><span>4439,20</span></td>
+                            <td><span>4362,60</span></td>
+                            <td><span>4425,84</span></td>
+                            <td><span>4425,84</span></td>
+                            <td><span>4.176.690.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>14 jun 2023</span></td>
+                            <td><span>4366,29</span></td>
+                            <td><span>4391,82</span></td>
+                            <td><span>4337,85</span></td>
+                            <td><span>4372,59</span></td>
+                            <td><span>4372,59</span></td>
+                            <td><span>4.252.110.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>13 jun 2023</span></td>
+                            <td><span>4352,61</span></td>
+                            <td><span>4375,37</span></td>
+                            <td><span>4349,31</span></td>
+                            <td><span>4369,01</span></td>
+                            <td><span>4369,01</span></td>
+                            <td><span>4.275.400.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>12 jun 2023</span></td>
+                            <td><span>4308,32</span></td>
+                            <td><span>4340,13</span></td>
+                            <td><span>4304,37</span></td>
+                            <td><span>4338,93</span></td>
+                            <td><span>4338,93</span></td>
+                            <td><span>3.945.670.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>09 jun 2023</span></td>
+                            <td><span>4304,88</span></td>
+                            <td><span>4322,62</span></td>
+                            <td><span>4291,70</span></td>
+                            <td><span>4298,86</span></td>
+                            <td><span>4298,86</span></td>
+                            <td><span>3.786.510.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>08 jun 2023</span></td>
+                            <td><span>4268,69</span></td>
+                            <td><span>4298,01</span></td>
+                            <td><span>4261,07</span></td>
+                            <td><span>4293,93</span></td>
+                            <td><span>4293,93</span></td>
+                            <td><span>3.826.740.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>07 jun 2023</span></td>
+                            <td><span>4285,47</span></td>
+                            <td><span>4299,19</span></td>
+                            <td><span>4263,96</span></td>
+                            <td><span>4267,52</span></td>
+                            <td><span>4267,52</span></td>
+                            <td><span>4.537.800.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>06 jun 2023</span></td>
+                            <td><span>4271,34</span></td>
+                            <td><span>4288,33</span></td>
+                            <td><span>4263,09</span></td>
+                            <td><span>4283,85</span></td>
+                            <td><span>4283,85</span></td>
+                            <td><span>3.996.560.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>05 jun 2023</span></td>
+                            <td><span>4282,99</span></td>
+                            <td><span>4299,28</span></td>
+                            <td><span>4266,82</span></td>
+                            <td><span>4273,79</span></td>
+                            <td><span>4273,79</span></td>
+                            <td><span>3.813.290.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>02 jun 2023</span></td>
+                            <td><span>4241,01</span></td>
+                            <td><span>4290,67</span></td>
+                            <td><span>4241,01</span></td>
+                            <td><span>4282,37</span></td>
+                            <td><span>4282,37</span></td>
+                            <td><span>4.454.200.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>01 jun 2023</span></td>
+                            <td><span>4183,03</span></td>
+                            <td><span>4232,43</span></td>
+                            <td><span>4171,64</span></td>
+                            <td><span>4221,02</span></td>
+                            <td><span>4221,02</span></td>
+                            <td><span>4.391.860.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>31 may 2023</span></td>
+                            <td><span>4190,74</span></td>
+                            <td><span>4195,44</span></td>
+                            <td><span>4166,15</span></td>
+                            <td><span>4179,83</span></td>
+                            <td><span>4179,83</span></td>
+                            <td><span>5.980.670.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>30 may 2023</span></td>
+                            <td><span>4226,71</span></td>
+                            <td><span>4231,10</span></td>
+                            <td><span>4192,18</span></td>
+                            <td><span>4205,52</span></td>
+                            <td><span>4205,52</span></td>
+                            <td><span>4.228.510.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>26 may 2023</span></td>
+                            <td><span>4156,16</span></td>
+                            <td><span>4212,87</span></td>
+                            <td><span>4156,16</span></td>
+                            <td><span>4205,45</span></td>
+                            <td><span>4205,45</span></td>
+                            <td><span>3.715.460.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>25 may 2023</span></td>
+                            <td><span>4155,71</span></td>
+                            <td><span>4165,74</span></td>
+                            <td><span>4129,73</span></td>
+                            <td><span>4151,28</span></td>
+                            <td><span>4151,28</span></td>
+                            <td><span>4.147.760.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>24 may 2023</span></td>
+                            <td><span>4132,96</span></td>
+                            <td><span>4132,96</span></td>
+                            <td><span>4103,98</span></td>
+                            <td><span>4115,24</span></td>
+                            <td><span>4115,24</span></td>
+                            <td><span>3.739.160.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>23 may 2023</span></td>
+                            <td><span>4176,80</span></td>
+                            <td><span>4185,68</span></td>
+                            <td><span>4142,54</span></td>
+                            <td><span>4145,58</span></td>
+                            <td><span>4145,58</span></td>
+                            <td><span>4.155.320.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>22 may 2023</span></td>
+                            <td><span>4190,78</span></td>
+                            <td><span>4209,22</span></td>
+                            <td><span>4179,68</span></td>
+                            <td><span>4192,63</span></td>
+                            <td><span>4192,63</span></td>
+                            <td><span>3.728.520.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>19 may 2023</span></td>
+                            <td><span>4204,15</span></td>
+                            <td><span>4212,91</span></td>
+                            <td><span>4180,20</span></td>
+                            <td><span>4191,98</span></td>
+                            <td><span>4191,98</span></td>
+                            <td><span>4.041.900.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>18 may 2023</span></td>
+                            <td><span>4157,68</span></td>
+                            <td><span>4202,20</span></td>
+                            <td><span>4153,50</span></td>
+                            <td><span>4198,05</span></td>
+                            <td><span>4198,05</span></td>
+                            <td><span>3.980.500.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>17 may 2023</span></td>
+                            <td><span>4122,85</span></td>
+                            <td><span>4164,67</span></td>
+                            <td><span>4113,62</span></td>
+                            <td><span>4158,77</span></td>
+                            <td><span>4158,77</span></td>
+                            <td><span>4.039.080.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>16 may 2023</span></td>
+                            <td><span>4127,95</span></td>
+                            <td><span>4135,54</span></td>
+                            <td><span>4109,86</span></td>
+                            <td><span>4109,90</span></td>
+                            <td><span>4109,90</span></td>
+                            <td><span>3.654.200.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>15 may 2023</span></td>
+                            <td><span>4126,65</span></td>
+                            <td><span>4141,25</span></td>
+                            <td><span>4110,27</span></td>
+                            <td><span>4136,28</span></td>
+                            <td><span>4136,28</span></td>
+                            <td><span>3.562.170.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>12 may 2023</span></td>
+                            <td><span>4138,54</span></td>
+                            <td><span>4143,74</span></td>
+                            <td><span>4099,12</span></td>
+                            <td><span>4124,08</span></td>
+                            <td><span>4124,08</span></td>
+                            <td><span>3.533.740.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>11 may 2023</span></td>
+                            <td><span>4132,24</span></td>
+                            <td><span>4132,80</span></td>
+                            <td><span>4109,29</span></td>
+                            <td><span>4130,62</span></td>
+                            <td><span>4130,62</span></td>
+                            <td><span>3.752.900.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>10 may 2023</span></td>
+                            <td><span>4143,74</span></td>
+                            <td><span>4154,28</span></td>
+                            <td><span>4098,92</span></td>
+                            <td><span>4137,64</span></td>
+                            <td><span>4137,64</span></td>
+                            <td><span>4.057.160.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>09 may 2023</span></td>
+                            <td><span>4124,25</span></td>
+                            <td><span>4130,35</span></td>
+                            <td><span>4116,65</span></td>
+                            <td><span>4119,17</span></td>
+                            <td><span>4119,17</span></td>
+                            <td><span>3.810.140.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>08 may 2023</span></td>
+                            <td><span>4136,98</span></td>
+                            <td><span>4142,30</span></td>
+                            <td><span>4123,81</span></td>
+                            <td><span>4138,12</span></td>
+                            <td><span>4138,12</span></td>
+                            <td><span>3.641.640.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>05 may 2023</span></td>
+                            <td><span>4084,73</span></td>
+                            <td><span>4147,02</span></td>
+                            <td><span>4084,73</span></td>
+                            <td><span>4136,25</span></td>
+                            <td><span>4136,25</span></td>
+                            <td><span>4.186.270.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>04 may 2023</span></td>
+                            <td><span>4082,55</span></td>
+                            <td><span>4082,61</span></td>
+                            <td><span>4048,28</span></td>
+                            <td><span>4061,22</span></td>
+                            <td><span>4061,22</span></td>
+                            <td><span>4.920.090.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>03 may 2023</span></td>
+                            <td><span>4122,25</span></td>
+                            <td><span>4148,30</span></td>
+                            <td><span>4088,86</span></td>
+                            <td><span>4090,75</span></td>
+                            <td><span>4090,75</span></td>
+                            <td><span>4.246.510.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>02 may 2023</span></td>
+                            <td><span>4164,10</span></td>
+                            <td><span>4164,10</span></td>
+                            <td><span>4089,72</span></td>
+                            <td><span>4119,58</span></td>
+                            <td><span>4119,58</span></td>
+                            <td><span>4.486.130.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>01 may 2023</span></td>
+                            <td><span>4166,79</span></td>
+                            <td><span>4186,92</span></td>
+                            <td><span>4164,12</span></td>
+                            <td><span>4167,87</span></td>
+                            <td><span>4167,87</span></td>
+                            <td><span>3.321.370.000</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="container-footer">
+            <div class="container-pie-tabla">
+                <h4>Pie</h4>
+            </div>
+            <div class="botton-volver">
+                <a href="../index.html" id="volver" class="btn btn-primary">Volver</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+.main-container {
+    margin: auto;
+
+}
+
+.container-ventana-modal {
+    
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    z-index: 10;
+    
+}
+
+
+
+.encabezado-ventana-modal {
+    position: absolute;
+    height: 10%;
+    background-color: #9A3B3B;
+    width: 100%;
+    
+}
+
+.container-form {
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    width: 100%;
+    background-color: #C08261;
+    
+}
+
+
+
+.pie-ventana-modal {
+    position: absolute;
+    height: 10%;
+    top: 90%;
+    background-color: #9A3B3B;
+    width: 100%;
+}
+
+.titulo-form {
+    position: absolute;
+    height: 20%;
+    top: 5%;
+}
+
+.contenido-form {
+    top: 20%;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    
+}
+
+.contenido-form .inputs-container input{
+    display: block;
+    width: 30%;
+}
+
+#btnCerrarVentana {
+    position: absolute;
+    right: 0px; /* Ajusta la distancia desde el borde derecho */
+     /* Ajusta la distancia desde el borde superior */
+    z-index: 10;
+    top: 0;
+    background-color: red;
+    padding: 1%;
+
+}
+
+#btnCerrarVentana:hover{
+    background-color: rgb(252, 133, 133);
+}
+
+.inputs-container {
+    position: absolute;
+    height: 70%;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    background-color: #F2ECBE;
+    border-radius: 10px;
+    
+}
+
+.inputs {
+    float: left;
+    width: 40%;
+    padding: 5px 0 0 0;
+    margin: 1% 1% 1% 3%;
+    
+    
+}
+
+#nombre, #posicion, #numero, #select-pais{
+    width: 90%;
+}
+
+.botones {
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    top: 70%;
+
+}
+
+.botones button {
+    margin-right: 10px;
+}
+
+
+.ventana-modal-desactivada {
+    visibility: hidden;
+}
+
+
+.fondo-desactivado {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.fondo-activo {
+    opacity: 1;
+    pointer-events: auto;
+}

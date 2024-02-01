@@ -1,0 +1,25 @@
+.main-container{
+    
+    margin: auto;
+    width: 90%;
+    padding: 5px 0 10px 15px;
+}
+
+.container-inputs{
+    background-color: rgb(245, 96, 96);
+    padding: 5px 0 10px 15px;
+}
+
+.main-container input, .main-container button{
+    display: block;
+    margin-bottom: 20px;    
+}
+
+.container-tabla{
+    background-color: rgb(181, 187, 255);
+    padding: 5px 15px 10px 15px;
+    margin-top: 10px;
+}
+
+.tabla{
+    display: none;}

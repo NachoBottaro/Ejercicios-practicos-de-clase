@@ -1,0 +1,106 @@
+html,
+body {
+    height: 100%;
+    background-color: #B0578D;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    border: 3px solid;
+    height: 10%;
+
+}
+
+.container-form {
+    position: absolute;
+    overflow: auto;
+    background-color: #F6F6F6;
+    height: 75%;
+    width: 100%;
+}
+
+.contenido-form{
+    width: 100%;
+    height: 80%;
+    
+    overflow: auto;
+    position: absolute;
+
+}
+
+.input{
+    width: 300px;
+    height: 140px;
+    padding: 2%;
+    border: 1px solid;
+    margin: 1%;
+    float: left;
+    max-width: 100%;
+    background-color: #FFE4D6;
+    
+}
+
+.input input{
+    display: block;
+    max-width: 100%;
+}
+
+.contenido-input-sexo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-input-sexo input{
+    margin: 0 10px 0 2px;
+}
+
+.botones-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 89%;
+    margin-top: 10px;
+    
+    
+}
+
+.botones-control button{
+    margin: 1%;
+    
+}
+
+
+
+.container-footer {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    background-color: #B0578D;
+    border: 3px solid;
+    height: 15%;
+}
+
+.container-pie-tabla {
+    top: 10%;
+    
+    position: absolute;
+}
+
+
+
+.botton-volver {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: 50%;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
